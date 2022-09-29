@@ -2,7 +2,9 @@ import React,{useState} from "react";
 
 const TodoList = (props)=>{
     const { handleAddItem } = props;
+
     const [description,setDescription] = useState("");
+
     const handleSubmit = e => {
         e.preventDefault();
         handleAddItem({
@@ -12,6 +14,7 @@ const TodoList = (props)=>{
         });
         setDescription("");
     };
+    
     return(
         <form onSubmit={handleSubmit}>
             <div className="todo-List">

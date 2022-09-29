@@ -11,7 +11,7 @@ const CheckBox = (props) =>{
          //   
         //</div>
         <Fragment>
-            <label className="todo-newitem">
+            <label className="todo new-item">
                 <input
                     className = "todo__state"
                     name ={id}

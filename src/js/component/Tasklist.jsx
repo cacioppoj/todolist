@@ -23,14 +23,14 @@ const TaskList = (props) =>{
     const check = list.map(item => (
        <CheckBox key ={item.id} data={item} onChange= {onChangeStatus}/>
     ));
-
+        console.log(list);
     return (
     <div className = "task-list">
         
         {list.length  ? check : "Sin Tareas"}
         {list.length ? (
             <p>
-                <button className="button-delete" onClick = {onClickRemoveItem}>
+                <button className="button blue" onClick = {onClickRemoveItem}>
                     Borrar Todo
                 </button>
             </p>
