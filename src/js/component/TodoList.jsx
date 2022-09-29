@@ -4,10 +4,10 @@ const TodoList = (props)=>{
     const { handleAddItem } = props;
     const [description,setDescription] = useState("");
     const handleSubmit = e => {
-        e.prventDefault();
+        e.preventDefault();
         handleAddItem({
             done: false,
-            id: (+new Date().toString()),
+            id: (Math.random()*10),
             description
         });
         setDescription("");
@@ -23,7 +23,7 @@ const TodoList = (props)=>{
                         onChange ={e => setDescription(e.target.value)}
                     />
                     <button
-                        className ="button-Add"
+                        className ="button pink"
                         disable ={description ? "" : "disabled"}
                     >
                         Agregar

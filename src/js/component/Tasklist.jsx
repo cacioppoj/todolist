@@ -21,12 +21,14 @@ const TaskList = (props) =>{
     };
     
     const check = list.map(item => (
-    <CheckBox key ={item.id} data={item} onChange= {onChangeStatus}/>
-    ))
+       <CheckBox key ={item.id} data={item} onChange= {onChangeStatus}/>
+    ));
+
     return (
     <div className = "task-list">
-        {list.lenght ? check : "Sin Tareas"}
-        {list.lenght ? (
+        
+        {list.length  ? check : "Sin Tareas"}
+        {list.length ? (
             <p>
                 <button className="button-delete" onClick = {onClickRemoveItem}>
                     Borrar Todo
@@ -34,7 +36,7 @@ const TaskList = (props) =>{
             </p>
         ) : null}
     </div>
-    )
+    );
 };
 
 export default TaskList

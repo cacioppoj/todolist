@@ -14,12 +14,10 @@ const Home = () => {
 		setList([...list,addItem]);
 	};
 	return (
-		<>
-			<div className="container">
-				<TodoList handleAddItem = {handleAddItem}/>
-				<TaskList list={list} setList= {setList}/>
-			</div>		
-		</>
+		<div className="container">
+			<TodoList handleAddItem = {handleAddItem}/>
+			<TaskList list={list} setList= {setList}/>
+		</div>		
 
 	);
 };
