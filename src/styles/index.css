@@ -19,7 +19,6 @@ body {
     width:100%;
     margin: auto;
 }
-
 .App{
     font-family: sans-serif;
     text-align: center;
@@ -95,10 +94,6 @@ button:hover{
     /* opacity: 0; */
     transform: translateX(100px);
     animation: fadeIn .3s linear forwards; 
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
   } 
   
    .todo__state {
@@ -113,3 +108,11 @@ button:hover{
     text-align: left;
     transition: all 0.4s/2 linear 0.4s/2;
   } 
+  .task-list{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20 px;
+  }
